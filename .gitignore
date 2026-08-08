@@ -1,0 +1,22 @@
+# LaTeX - archivos generados
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.glo
+*.glg
+*.gls
+*.glsdefs
+*.ist
+*.lof
+*.log
+*.lot
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+
+# PDF generado por LaTeX
+z-main.pdf
