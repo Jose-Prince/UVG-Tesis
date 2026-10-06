@@ -1,0 +1,156 @@
+\section{Enfoque metodológico}
+
+El presente trabajo profesional de graduación corresponde a un proyecto de investigación aplicada de carácter experimental, ya que combina el desarrollo de un instrumento funcional (videojuego) con la medición y análisis de variables controladas sobre una muestra de IA generativa en el desarrollo de videojuegos.
+
+El enfoque experimental se justifica por la naturaleza del estudio, que presenta a un grupo de personas que evalúan dos versiones del videojuego sin informales que una está realizada con IA generativa. Este diseño permite aislar la reacción real de los participantes ante la calidad del contenido, eliminando un posible efecto del etiquetado y garantizando que la retroalimentación y comentarios reflejan una percepción genuina del contenido de ambas versiones. Los datos fueron recolectados mediante pruebas A/B y escalas Likert; las repuestas de los participantes fueron analizadas estadísticamente para identificar las diferencias significativas entre las dos versiones.
+
+Por otro lado, el enfoque de investigación aplicada se justifica porque el objetivo del proyecto no es generar hallazgos de carácter puramente teórico, sino que busca proporcionar información valiosa para la industria de videojuegos para tomar decisiones informadas sobre la incorporación de la IA generativa en sus procesos de producción.
+
+\section{Metodología de trabajo}
+
+Para la gestión y ejecución del proyecto se seleccionó Scrumban, un marco metodológico híbrido que fusiona la estructura operativa de Scrum con el flujo visual y la limitación del trabajo en curso de Kanban (poner referencia). Mientras que Scrum aporta predictibilidad mediante ciclos de trabajo fijos denominados \textit{sprints}, Kanban optimiza el flujo continuo y previene la sobrecarga del equipo al visibilizar las tareas en un tablero dinámico.
+
+La elección de Scrumban corresponde a la necesidad de maximizar la eficiencia del equipo de desarrollo. La planificación basada en \textit{sprints} facilita una distribución equitativa y estructurada de la carga técnica, asegurando entregas incrementales en plazos definidos. Por su parte, la integración de Kanban promueve una comprensión clara del estado del proyecto en tiempo real, mejorando la sincronización de los integrantes y eliminando cuellos de botella. EN conclusión, la agilidad y adaptabilidad que ofrece este enfoque híbrido fueron los factores clave para su implementación en el proyecto.
+
+\section{Fases del proyecto}
+
+Para la ejecución del proyecto, el proceso se ha estructurado en cuatro fases. Cada una de ellas se enfoca en un aspecto metodológico y técnico específico para asegurar el cumplimiento de los objetivos. A continuación, se detallan las fases establecidas:
+
+\begin{enumerate}
+    \item \textbf{Fase 1: Creación de demo técnica}\newline
+    Esta fase se centra en la producción de una demo técnica del videojuego. Se optó por este formato empaquetado para delimitar el alcance del proyecto, lo que permite ofrecer una experiencia jugable y completa sin la necesidad de producir un título de extensión comercial. En esta etapa se llevó a cabo el desarrollo integral de las mecánicas base. 
+    \item \textbf{Fase 2: Creación de demo con IA}\newline
+    Con la versión base consolidada, el objetivo de esta fase es replicar la demo técnica pero con completa asistencia por herramientas de IA. Se busca la sustitución o generación de los componentes del juego utilizando algoritmos de inteligencia artificial, tomando como referencia la estructura de la versión original del juego. EL uso de estas herramientas se realizó bajo criterios de buenas prácticas, asegurando un producto final jugable y con una calidad técnica equiparable a la de la demo desarrollada de forma tradicional.
+    \item \textbf{Fase 3: Presentación a estudiantes y análisis de resultados}\newline
+    Con ambas versiones del videojuego finalizadas, se procedió a la realización de las pruebas A/B con los estudiantes. Durante el experimento no se les informó a una parte de los participantes que una de las versiones fue desarrollada con el uso completo de IA. TRas interactuar con ambas variantes, los usuarios responderán un cuestionario con escala de Likert para evaluar su experiencia y preferencia. Los datos recolectados permitieron contrastar la percepción real frente al sesgo inicial sobre el uso de la IA en la industria de los videojuegos.
+\end{enumerate}
+
+\section{Recursos}
+\begin{enumerate}[label=\alph*]
+    \item Recursos humanos\newline
+    El proyecto involucra dos categorías de agentes con roles diferentes: desarrolladores y participantes.
+    
+    El equipo de desarrollo está conformado por dos estudiantes universitarios de la Universidad del Valle de Guatemala, cada uno con un enfoque específico. Un integrante fue el encargado del desarrollo visual, incluyendo la generación de assets con inteligencia artificial, su implementación en el motor de juego y la evaluación de su calidad mediante métricas computacionales. El segundo integrante fue el encargado del desarrollo de la lógica y código del videojuego, incorporando en una de las versiones técnicas de \textit{vibe coding} utilizando ChatGPT.
+
+    Además, participarán estudiantes universitarios de la UNiversidad del Valle de Guatemala (UVG) como muestra para las sesiones de evaluación. Estos, después de experimentar cada versión del juego, fueron sometidos a completar una serie de preguntas con una escala Likert como instrumento de evaluación subjetiva. Para cada, versión se le hizo la misma serie de preguntas a los participantes para poder evaluar cada versión de forma individual y poder compararlas.
+    \item Recursos tecnológicos\newline
+    Para el desarrollo del videojuego se utilizó Godot Engine, un motor de código abierto y suo gratuito \cite{godot2026docs} que proveyó el entorno de desarrollo, renderizado y ejecución de ambas versiones del juego.
+
+    Para el desarrollo de código se utilizó ChatGPT, específicamente el modelo GPT-5.6 Luna, como herramienta de inteligencia artificial para la generación y asistencia en la escritura del código del videojuego. Para la recolección de datos subjetivos de los participantes se utilizó Google Forms, que permitió diseñar instrumentos con escalas Likert y exportar los resultados para su análisis estadístico. La organización, planificación y asignación de tareas del equipo se gestionó mediante Notion, una plataforma colaborativa en línea que centraliza el seguimiento del avance del proyecto. Todo el desarrollo se realizó en las computadoras personales de cada miembro del equipo.
+    \item Estrategias para garantizar disponibilidad \newline
+    Para garantizar la disponibilidad de los recursos tecnológicos, el código del proyecto fue gestionado mediante un repositorio de Github, asegurando todos los miembros del equipo tengan acceso ante cualquier pérdida de datos.
+
+    Para garantizar la disponibilidad de los participantes, la convocatoria a las sesiones de evaluación se realizó con la anticipación suficiente y se proporcionó incentivos para garantizar la participación del mayor número posible de estudiantes.
+\end{enumerate}
+\section{Factibilidad}
+
+El proyecto fue técnicamente viable dentro del tiempo disponible, debido a que las tecnologías necesarias para su desarrollo fueron accesibles y ampliamente utilizadas. Godot Engine fue completamente gratuito y utilizado frecuentemente para realizar juegos \textit{indie}. Por su lado, la utilización de GPT-5.6 Luna permitió el acceso a una cantidad ilimitada de prompts, permitiendo la integración continua de código al proyecto. Debido a que el juego no se construyó desde cero junto a ChatGPT, se estimó que con la capa gratuita de ChatGPT se podría completar el desarrollo de las mecánicas de esta versión del juego.
+
+La demo del videojuego tuvo una escala alcanzable por un equipo de dos personas con los conocimientos técnicos propios de estudiantes de Ingeniería en Ciencias de la Computación. Además, el uso de Godot redujo la complejidad técnica al proveer sistemas de renderizado, física y gestión de \textit{assets}, lo que permitió que el equipo se enfocara en el contenido y no en la infraestructura del videojuego. Finalmente, no se necesitaron equipos complejos para realizar el proyecto, ya que la principal herramienta fueron las computadoras personales de cada integrante.
+
+A pesar de la viabilidad técnica del proyecto, se identificaron riesgos metodológicos. La Tabla~\ref{tab:riesgos-metodologicos} presenta cada riesgo junto con su nivel de impacto, probabilidad estimada y plan de mitigación correspondiente.
+
+\begin{table}[H] 
+    \centering 
+    \caption{Riesgos metodológicos y estrategias de mitigación} 
+    \label{tab:riesgos-metodologicos} 
+    \begin{tabularx}{\textwidth}{|c|X|X|c|c|X|} 
+        \hline 
+        \textbf{\#} & 
+        \textbf{Riesgo} & 
+        \textbf{Descripción} & 
+        \textbf{Impacto} & 
+        \textbf{Probabilidad} & 
+        \textbf{Mitigación} \\ 
+        \hline 
+        1 & 
+        Inconsistencia en la calidad entre versiones & 
+        La versión con IA podría haber presentado una calidad notoriamente inferior & 
+        Alto & 
+        Media & 
+        Se establecieron criterios de calidad mínimos antes de iniciar la generación con IA \\ 
+        \hline 2 & 
+        Tamaño de muestra insuficiente & 
+        No alcanzar el número mínimo de participantes habría comprometido la representatividad y significancia estadística de los resultados & 
+        Alto & 
+        Baja & 
+        Se realizó la convocatoria con anticipación y se definió un número mínimo de participantes como criterio de validez previo a la recolección \\ 
+        \hline 3 & 
+        Identificación del contenido de IA por los participantes &
+        Algunos participantes podrían haber detectado que una versión utilizaba IA, introduciendo el efecto del etiquetado e invalidando su evaluación ciega & 
+        Medio &
+        Media & 
+        Se incluyó al final del instrumento una pregunta que permitió detectar si el participante había sospechado el uso de IA, con el fin de aislar esos casos del análisis \\ 
+        \hline 4 & 
+        Cantidad de tokens insuficientes para la capa gratuita & 
+        Superar constantemente la cantidad máxima de tokens habría provocado que el desarrollo terminara siendo lento & Alto & Baja & 
+        Se utilizaron \textit{prompts} cuando fue necesario y se evitaron \textit{prompts} que no generaran valor para el juego \\ 
+        \hline 5 & 
+        Generación de código de baja calidad & 
+        Al generar código se pudieron producir errores o incumplir el estándar de calidad & 
+        Alto & 
+        Media & 
+        Se formularon \textit{prompts} detallados para obtener respuestas precisas de la IA \\ 
+        \hline 
+    \end{tabularx} 
+\end{table}
+
+\section{Métricas e indicadores}
+
+Para evaluar de manera cuantitativa y cualitativa el cumplimiento de los objetivos del proyecto, se definieron indicadores agrupados bajo dos enfoques metodológicos: métricas de calidad y estabilidad técnica, orientadas a garantizar que el software actuara como un entorno de pruebas controlado y simétrico; y métricas de percepción subjetiva, diseñadas para evaluar la experiencia del usuario y la capacidad de detección del código generado algorítmicamente. 
+
+A continuación, se detallaron las métricas establecidas, su relación directa con los objetivos específicos y sus respectivos mecanismos de recolección de datos. 
+\subsection{Métricas de percepción sobre la calidad y fluidez del código} 
+
+\subsubsection{Definición de las métricas} 
+
+\begin{enumerate} 
+    \item \textbf{Índice de Fluidez de Ejecución (IFE):} Puntaje promedio asignado por los evaluadores a la respuesta de los controles, la suavidad en las transiciones lógicas del juego y el rendimiento del bucle principal. 
+    \item \textbf{Índice de Consistencia Lógica (ICL):} Grado de coherencia que el usuario percibió en las físicas del juego, el cálculo de colisiones y el comportamiento algorítmico de los elementos interactivos o enemigos. 
+\end{enumerate} 
+
+\subsubsection{Forma de medición y recolección} 
+
+Los datos se recopilaron al finalizar las pruebas A/B a través de un cuestionario psicométrico implementado en Google Forms. Los participantes evaluaron ambos reactivos de forma independiente utilizando una escala de Likert de 5 puntos, donde 1 representó ``Totalmente ineficiente o rígido'' y 5 representó ``Totalmente fluido o consistente''. Posteriormente, se aplicó una prueba estadística $t$ de Student para muestras relacionadas con el fin de determinar si existían diferencias estadísticas significativas ($p < 0.05$) entre la percepción de la arquitectura lógica humana y la asistida por IA. 
+
+\subsection{Métricas de paridad funcional y estabilidad del software}
+
+\subsubsection{Definición de las métricas} 
+
+\begin{enumerate} 
+    \item \textbf{Tasa de Densidad de Errores Lógicos ($D_e$):} Cantidad total de fallos de software técnicos o de rendimiento (\textit{bugs} lógicos, desbordamientos o caídas de \textit{framerate}) detectados y registrados por unidad de tiempo durante las fases de control de calidad. 
+    
+    Se calculó formalmente mediante la relación: 
+    
+    \begin{equation} 
+        D_e = 
+        \frac{\text{Número de errores lógicos detectados}} 
+        {\text{Horas totales de \textit{playtesting}}} 
+    \end{equation} 
+\end{enumerate} 
+
+\subsubsection{Forma de medición y recolección} 
+
+Los desarrolladores realizaron bitácoras de \textit{playtesting} técnico interno previas a la exposición con los estudiantes. El objetivo metodológico fue que ambas versiones alcanzaran una tasa de $D_e = 0$ en errores críticos (aquellos que alteraran las mecánicas base de forma impredecible) durante la realización de las pruebas A/B. Esto garantizó la paridad funcional, asegurando que los usuarios evaluaran la naturaleza del código y no la falta de depuración de una versión sobre la otra. 
+
+\subsection{Métricas de diferenciación y criterios de detección de código} 
+
+\subsubsection{Definición de las métricas} 
+
+\begin{enumerate} 
+    \item \textbf{Tasa de Acierto (TA):} Porcentaje de participantes que lograron identificar correctamente cuál de las dos opciones del emparejamiento aleatorizado en la prueba A/B correspondía a la versión construida mediante técnicas de \textit{vibe coding} con ChatGPT. 
+\end{enumerate} 
+
+\subsubsection{Forma de medición y recolección} Al concluir la sesión de juego, la encuesta final en Google Forms obligó al participante a elegir cuál versión consideraba que poseía lógica programada por IA, mediante una pregunta de opción forzada para calcular la TA. Durante la encuesta final, se presentó una sección de selección múltiple basada en anomalías lógicas potenciales (ej.\ patrones de movimiento excesivamente predictivos, ventanas de tiempo rígidas en los \textit{inputs}, respuestas de colisión inusuales o comportamientos mecánicos atípicos), complementada con una sección de texto libre. Los datos cualitativos de las justificaciones escritas se procesaron mediante codificación temática para estructurar las razones del estudiantado.
+
+\section{Trazabilidad metodológica}
+
+En la actualidad, la percepción del público general respecto al uso de Inteligencia Artificial generativa en el desarrollo de videojuegos era predominantemente negativa, llegando a impactar directamente en el rendimiento comercial y la reputación de los títulos en el mercado. Diversos proyectos que habían integrado recursos (\textit{assets}) generados mediante IA habían enfrentado un fuerte rechazo por parte de la comunidad de jugadores. Este fenómeno sugirió que el simple conocimiento de que un videojuego implementaba IA podía restarle valor percibido al producto final. 
+
+Bajo esta premisa, la presente investigación buscó determinar si el rechazo hacia la IA generativa se fundamentaba en el prejuicio derivado del conocimiento de su uso o si respondía a una deficiencia real en la calidad técnica y estética del contenido. Para evaluar esta hipótesis, se diseñó un experimento basado en pruebas A/B que contrastó una demo técnica desarrollada con métodos tradicionales frente a una variante equivalente producida mediante herramientas de IA generativa. Asimismo, este estudio persiguió objetivos específicos orientados a garantizar la paridad funcional mediante la menor cantidad de errores en ambas versiones y a categorizar los criterios que permitieron a los estudiantes detectar el contenido de IA en el código. 
+
+Con el propósito de evaluar y cuantificar las reacciones de los usuarios ante ambas variantes de la demo, se empleó la escala de Likert como instrumento de medición psicométrica. El proceso metodológico inició con la producción de la versión técnica base, lo que permitió delimitar el alcance del proyecto e identificar los componentes clave que debían replicarse. De manera simultánea, se administró un cuestionario diagnóstico inicial para establecer la línea base cuantitativa sobre la percepción de los estudiantes de la UVG respecto a la IA en esta industria. Posteriormente, se desarrolló la versión asistida por IA, adaptando las mecánicas, interfaces, estilo visual y diseño sonoro mediante algoritmos generativos. 
+
+Fue indispensable que ambas versiones exhibieran paridad técnica, asegurando que ninguna fuera intrínsecamente superior a la otra. Una vez consolidados ambos prototipos, se ejecutaron las pruebas A/B con la muestra poblacional seleccionada y, al concluir la interacción, se aplicó una encuesta final para determinar el nivel de agrado y preferencia de los usuarios. 
+
+A partir del análisis estadístico de los datos recolectados, se contrastó si la Tasa de Acierto (TA) se inclinaba significativamente hacia la identificación de la experiencia generada por ChatGPT. Esto permitió mapear con precisión qué comportamientos o estructuras lógicas delataron el uso de herramientas de IA generativa frente a la programación tradicional en la experiencia final del usuario.
