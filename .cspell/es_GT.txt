@@ -2591,6 +2591,7 @@ algonquino
 algorfa
 algorín
 algoritmia
+algorítmicamente
 algorítmico
 algoritmo
 algoso

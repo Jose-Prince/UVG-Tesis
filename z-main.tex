@@ -35,6 +35,7 @@
 % DEFINICIÓN DE PAQUETES
 % ==============================================================================
 \usepackage{xcolor}
+\usepackage{enumitem}
 \usepackage{amsfonts}
 \usepackage{amsmath}
 \usepackage{amssymb}
@@ -398,6 +399,18 @@
 		\defaultparformat{i-marco_teorico}
 	\else
 		\input{i-marco_teorico}
+	\fi
+\fi
+
+% MARCO METODOLÓGICO
+% ------------------------------------------------------------------------------
+\ifdefined\CAPmarcometodologico
+	\newpage
+	\chapter{Marco metodológico}
+	\ifdefined\parpordefecto
+		\defaultparformat{p-marco_metodologico}
+	\else
+	\input{p-marco-metodologico}
 	\fi
 \fi
 
