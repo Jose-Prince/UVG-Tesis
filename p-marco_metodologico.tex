@@ -32,9 +32,11 @@ Para la ejecución del proyecto, el proceso se ha estructurado en cuatro fases. 
     
     El equipo de desarrollo está conformado por dos estudiantes universitarios de la Universidad del Valle de Guatemala, cada uno con un enfoque específico. Un integrante fue el encargado del desarrollo visual, incluyendo la generación de assets con inteligencia artificial, su implementación en el motor de juego y la evaluación de su calidad mediante métricas computacionales. El segundo integrante fue el encargado del desarrollo de la lógica y código del videojuego, incorporando en una de las versiones técnicas de \textit{vibe coding} utilizando ChatGPT.
 
-    Además, participarán estudiantes universitarios de la UNiversidad del Valle de Guatemala (UVG) como muestra para las sesiones de evaluación. Estos, después de experimentar cada versión del juego, fueron sometidos a completar una serie de preguntas con una escala Likert como instrumento de evaluación subjetiva. Para cada, versión se le hizo la misma serie de preguntas a los participantes para poder evaluar cada versión de forma individual y poder compararlas.
+    Para determinar con rigor estadístico el tamaño de la muestra, se utilizó un análisis de potencia, herramienta fundamental en el diseño experimental para garantizar la validez de un estudio \cite{abbadia2025analisis}. Este análisis articula cuatro componentes interconectados: la potencia estadística, el tamaño del efecto, el nivel de significancia ($\alpha$) y el tamaño de la muestra (n). En primer lugar, la potencia estadística mide la probabilidad de rechazar correctamente la hipótesis nula cuando ésta es falsa, fijándose en el umbral estándar del 80\% (1 - $\beta$ = 0.80). En segundo lugar, el tamaño del efecto cuantifica la magnitud del fenómeno estudiado mediante la d de Cohen (idónea para comparar las medias de dos grupos); para esta investigación se estimó un efecto grande de 0.75, fundamentado en que el fuerte estigma hacia la IA generativa provocaría un cambio drástico y altamente perceptible en las puntuaciones. En tercer lugar, el nivel de significancia ($\alpha$) representa la probabilidad de cometer un error de Tipo I (falso positivo), el cual se estableció en el 5\% ($\alpha$ = 0.05). Finalmente, al introducir matemáticamente estos parámetros, el análisis determinó un requerimiento mínimo de 30 participantes por grupo, consolidando una muestra total de 60 sujetos para el experimento.
+
+    La población del estudio fue constituida por estudiantes de la UNiversidad del Valle de Guatemala (UVG). Tras interactuar con ambas versiones del videojuego en la prueba A/B, los participantes completaron un cuestionario psicométrico basado en la escala Likert como instrumento de evaluación subjetiva. Los reactivos de la encuesta se diferenciaron según la condición experimental del sujeto: el grupo informado evaluará las mecánicas identificando explícitamente el origen de cada versión, mientras que el grupo no informado (ciego) responderá bajo un esquema de evaluación neutral, permitiendo aislar el sesgo ideológico de la calidad técnica percibida. 
     \item Recursos tecnológicos\newline
-    Para el desarrollo del videojuego se utilizó Godot Engine, un motor de código abierto y suo gratuito \cite{godot2026docs} que proveyó el entorno de desarrollo, renderizado y ejecución de ambas versiones del juego.
+    Para el desarrollo del videojuego se utilizó Godot Engine, un motor de código abierto y uso gratuito \cite{godot2026docs} que proveyó el entorno de desarrollo, renderizado y ejecución de ambas versiones del juego.
 
     Para el desarrollo de código se utilizó ChatGPT, específicamente el modelo GPT-5.6 Luna, como herramienta de inteligencia artificial para la generación y asistencia en la escritura del código del videojuego. Para la recolección de datos subjetivos de los participantes se utilizó Google Forms, que permitió diseñar instrumentos con escalas Likert y exportar los resultados para su análisis estadístico. La organización, planificación y asignación de tareas del equipo se gestionó mediante Notion, una plataforma colaborativa en línea que centraliza el seguimiento del avance del proyecto. Todo el desarrollo se realizó en las computadoras personales de cada miembro del equipo.
     \item Estrategias para garantizar disponibilidad \newline
@@ -100,48 +102,45 @@ A pesar de la viabilidad técnica del proyecto, se identificaron riesgos metodol
 Para evaluar de manera cuantitativa y cualitativa el cumplimiento de los objetivos del proyecto, se definieron indicadores agrupados bajo dos enfoques metodológicos: métricas de calidad y estabilidad técnica, orientadas a garantizar que el software actuara como un entorno de pruebas controlado y simétrico; y métricas de percepción subjetiva, diseñadas para evaluar la experiencia del usuario y la capacidad de detección del código generado algorítmicamente. 
 
 A continuación, se detallaron las métricas establecidas, su relación directa con los objetivos específicos y sus respectivos mecanismos de recolección de datos. 
-\subsection{Métricas de percepción sobre la calidad y fluidez del código} 
+\subsection{Métrica 1: Índice de experiencia del jugador} 
 
-\subsubsection{Definición de las métricas} 
+\subsubsection{Definición de la métrica} 
 
-\begin{enumerate} 
-    \item \textbf{Índice de Fluidez de Ejecución (IFE):} Puntaje promedio asignado por los evaluadores a la respuesta de los controles, la suavidad en las transiciones lógicas del juego y el rendimiento del bucle principal. 
-    \item \textbf{Índice de Consistencia Lógica (ICL):} Grado de coherencia que el usuario percibió en las físicas del juego, el cálculo de colisiones y el comportamiento algorítmico de los elementos interactivos o enemigos. 
-\end{enumerate} 
+Es la puntuación multidimensional que cuantifica la experiencia del estudiante al interactuar con el videojuego, evaluando dimensiones clave del marco Player Experience Inventory (PXI) tales como la inmersión, competencia, autonomía, claridad técnica y diversión. Evalúa las diferencias estadísticamente significativas en las dimensiones de la experiencia del jugador entre la versión desarrollada tradicionalmente y la versión asistida por inteligencia artificial generativa.
 
 \subsubsection{Forma de medición y recolección} 
 
-Los datos se recopilaron al finalizar las pruebas A/B a través de un cuestionario psicométrico implementado en Google Forms. Los participantes evaluaron ambos reactivos de forma independiente utilizando una escala de Likert de 5 puntos, donde 1 representó ``Totalmente ineficiente o rígido'' y 5 representó ``Totalmente fluido o consistente''. Posteriormente, se aplicó una prueba estadística $t$ de Student para muestras relacionadas con el fin de determinar si existían diferencias estadísticas significativas ($p < 0.05$) entre la percepción de la arquitectura lógica humana y la asistida por IA. 
+Se aplicará un cuestionario psicométrico estructurado mediante escalas Likert de 5 puntos (donde 1 representa "Totalmente en desacuerdo" y 5 representa "Totalmente de acuerdo") justo al concluir el playtesting de ambas versiones y para cada una de las poblaciones de estudio. Los datos obtenidos se procesarán mediante un análisis de varianza (ANOVA mixto 2x2) para determinar si existen diferencias estadísticamente significativas (p < 0.05) atribuibles al método de desarrollo. 
 
-\subsection{Métricas de paridad funcional y estabilidad del software}
+\subsection{Métrica 2: Índice de Valoración de Componentes Específicos}
 
-\subsubsection{Definición de las métricas} 
+\subsubsection{Definición de la métrica} 
 
-\begin{enumerate} 
-    \item \textbf{Tasa de Densidad de Errores Lógicos ($D_e$):} Cantidad total de fallos de software técnicos o de rendimiento (\textit{bugs} lógicos, desbordamientos o caídas de \textit{framerate}) detectados y registrados por unidad de tiempo durante las fases de control de calidad. 
-    
-    Se calculó formalmente mediante la relación: 
-    
-    \begin{equation} 
-        D_e = 
-        \frac{\text{Número de errores lógicos detectados}} 
-        {\text{Horas totales de \textit{playtesting}}} 
-    \end{equation} 
-\end{enumerate} 
+Es un indicador que cuantifica el grado de aceptación y la calificación subjetiva asignada por los estudiantes universitarios a elementos particulares del videojuego (tales como las mecánicas de juego y el apartado técnico o de programación), permitiendo identificar si existen desvíos en la calidad percibida de componentes específicos entre ambas versiones. Analiza la variación en la valoración de los componentes individuales (mecánicas de juego y apartado técnico/código) cuando los estudiantes desconocen la fuente de generación frente a cuando se les revela explícitamente el uso de IA generativa.
 
 \subsubsection{Forma de medición y recolección} 
 
-Los desarrolladores realizaron bitácoras de \textit{playtesting} técnico interno previas a la exposición con los estudiantes. El objetivo metodológico fue que ambas versiones alcanzaran una tasa de $D_e = 0$ en errores críticos (aquellos que alteraran las mecánicas base de forma impredecible) durante la realización de las pruebas A/B. Esto garantizó la paridad funcional, asegurando que los usuarios evaluaran la naturaleza del código y no la falta de depuración de una versión sobre la otra. 
+Se utilizarán reactivos específicos estructurados con escalas Likert de 5 puntos dentro del cuestionario posterior a la prueba. Se evaluará la percepción tanto en el bloque a ciegas (para medir la reacción objetiva al contenido) como tras la revelación de la autoría (para medir el sesgo de etiquetado). Los resultados se analizarán mediante pruebas estadísticas comparativas para contrastar las variaciones en cada componente específico.
 
-\subsection{Métricas de diferenciación y criterios de detección de código} 
+\subsection{Métrica 3: Coeficiente de Correlación de Conocimiento Previo} 
 
-\subsubsection{Definición de las métricas} 
+\subsubsection{Definición de la métrica} 
 
-\begin{enumerate} 
-    \item \textbf{Tasa de Acierto (TA):} Porcentaje de participantes que lograron identificar correctamente cuál de las dos opciones del emparejamiento aleatorizado en la prueba A/B correspondía a la versión construida mediante técnicas de \textit{vibe coding} con ChatGPT. 
-\end{enumerate} 
+Es una medida estadística de asociación que cuantifica la relación entre el nivel de familiaridad, experiencia previa y actitud declarada de los estudiantes universitarios hacia la inteligencia artificial generativa, y los niveles de aceptación, rechazo o calificación final que otorgan a cada versión del videojuego. Mide el grado de correlación entre el conocimiento previo y las actitudes hacia la IA generativa de los estudiantes universitarios con sus niveles de aceptación, preferencia y percepción final del videojuego.
 
-\subsubsection{Forma de medición y recolección} Al concluir la sesión de juego, la encuesta final en Google Forms obligó al participante a elegir cuál versión consideraba que poseía lógica programada por IA, mediante una pregunta de opción forzada para calcular la TA. Durante la encuesta final, se presentó una sección de selección múltiple basada en anomalías lógicas potenciales (ej.\ patrones de movimiento excesivamente predictivos, ventanas de tiempo rígidas en los \textit{inputs}, respuestas de colisión inusuales o comportamientos mecánicos atípicos), complementada con una sección de texto libre. Los datos cualitativos de las justificaciones escritas se procesaron mediante codificación temática para estructurar las razones del estudiantado.
+\subsubsection{Forma de medición y recolección} 
+
+Se administra un cuestionario diagnóstico inicial antes de la prueba para evaluar el perfil tecnológico y las percepciones previas del participante sobre el uso de la IA en el desarrollo de software. Posteriormente, se cruza estadísticamente esta información con las puntuaciones globales de experiencia de juego y aceptación obtenidas tras la evaluación. Se aplican pruebas de correlación estadística para determinar si un mayor conocimiento o preconcepto sobre la IA influye de manera directa en la evaluación del producto.
+
+\subsection{Métrica 4: Indice de Sensibilidad al Etiquetado}
+
+\subsubsection{Definición de la métrica}
+
+En un indicador que cuantifica la magnitud del cambio en la valoración global y la intención de uso que emite un estudiante cuando evalúa el videojuego bajo un esquema a ciegas en comparación con cuando se le revela explícitamente el origen del desarrollo. Compara el impacto relativo que tienen la calidad del contenido entregado y el sesgo de etiquetado sobre la intención de uso y la valoración global del videojuego por parte de los usuarios.
+
+\subsubsection{Forma de medición y recolección}
+
+Se registran las puntuaciones de valoración global y de intención de uso otorgadas por los participantes en ambos momentos (antes y después de conocer la procedencia del código). Se utiliza un análisis de varianza para medir estadísticamente si la revelación de la autoría genera una caída artificial en la nota o si la valoración se mantiene estable basándose en la calidad técnica experimentada.
 
 \section{Trazabilidad metodológica}
 
