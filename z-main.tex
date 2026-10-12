@@ -22,6 +22,7 @@
 \usetikzlibrary{positioning, arrows.meta, shapes.geometric}
 \usepackage{array}
 \usepackage{tabularx}
+\usepackage{booktabs}
 
 \title{Plantilla para Trabajos de Graduación IE-MT 2019v3}
 \author{MSc. Miguel Zea}
@@ -414,15 +415,17 @@
 	\fi
 \fi
 
-% CAPÍTULOS
+% Resultados
 % ------------------------------------------------------------------------------
-\newpage
-\ifdefined\parpordefecto
-	\defaultparformat{j-capitulos}
-\else
-	\input{j-capitulos}
+\ifdefined\CAPresultados
+	\newpage
+	\chapter{Resultados}
+	\ifdefined\parpordefecto
+		\defaultparformat{q-resultados}
+	\else
+		\input{q-resultados}
+	\fi
 \fi
-
 % CONCLUSIONES
 % ------------------------------------------------------------------------------
 \ifdefined\CAPconclusiones
