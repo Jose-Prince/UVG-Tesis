@@ -379,6 +379,18 @@
 	\fi
 \fi
 
+% HIPÓTESIS
+% ------------------------------------------------------------------------------
+\ifdefined\CAPhipotesis
+	\newpage
+	\chapter{Hipótesis}
+	\ifdefined\parpordefecto
+		\defaultparformat{r-hipotesis}
+	\else
+		\input{r-hipotesis}
+	\fi
+\fi
+
 % ALCANCE
 % ------------------------------------------------------------------------------
 \ifdefined\CAPalcance
