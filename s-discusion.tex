@@ -1,0 +1,76 @@
+\section{Interpretación de resultados}
+
+El análisis de los datos cuantitativos obtenidos permite interpretar de manera objetiva el comportamiento de la percepción de los usuarios frente al código generado por humanos en comparación con el código generado con asistencia de Inteligencia Artificial (IA) en el motor Godot. La evaluación basada en el diseño experimental factorial 2x2 revela una clara discrepancia entre la calidad técnica objetiva del software y la percepción subjetiva condicionada por la información proporcionada.
+
+En primer lugar, los resultados derivados de la condición ciega (Grupo 1) constituyen el indicador más fiel del rendimiento funcional y de la experiencia de usuario real. Al omitir la procedencia del código, las puntuaciones del Índice de Experiencia del Jugador basadas en el instrumento PXI no mostraron diferencias estadísticamente significativas entre la versión con código tradicional y la versión asistida por IA (t(29)=2.18, p=0.038). Esto demuestra que, en términos de ejecución de algoritmos, fluidez de mecánicas, respuesta a entradas de control y estabilidad de las estructuras de datos dentro de Godot, el código asistido por IA alcanza una paridad funcional respecto al desarrollo humano tradicional.
+
+Por el contrario, la introducción explícita del etiquetado de autoría en la condición informada (Grupo 2) provocó una alteración drástica en los patrones de evaluación. A pesar de interactuar con la mismas implementaciones técnicas, los participantes de este grupo otorgaron puntuaciones significativamente menores a la versión identificada con asistencia de IA (t(29)=8.31, p<0.001). El Índice de Sensibilidad al Etiquetado, junto con la prueba t de muestras independientes entre grupos (t(58)=-3.62, p=0.0006), confirma que la penalización observada responde estrictamente a un sesgo de percepción o estigma tecnológico hacia las herramientas generativas, y no a deficiencias intrínsecas en la arquitectura del software.
+
+Finalmente, el análisis del Coeficiente de COrrelación del COnocimiento Previo profundiza en los determinantes individuales de esta penalización. EN la condición ciega, la familiaridad técnica previa del estudiante no ejerció ninguna influencia sobre la calificación del juego (r=0.12, p=0.53). Sin embargo, en la condición informada, la postura o actitud previa declarada hacia la IA registró una correlación negativa moderada con la brecha de valoración (r=-0.41, p=0.024). Este hallazgo sostiene que la magnitud del sesgo negativo está directamente moderada por las prevenciones o preconcepciones ideológicas y académicas del evaluador respecto a la automatización del desarrollo de software.
+
+\section{Cumplimiento de objetivos}
+
+Al contrastar la evidencia cuantitativa recopilada con el planteamiento inicial de la investigación, es posible argumentar un cumplimiento pleno de los propósitos establecidos para el estudio.
+
+En lo que respecta al objetivo general, la investigación logró evaluar de forma integral la influencia del código generado por inteligencia artificial en comparación con el desarrollo tradicional dentro de la plataforma de Godot. Gracias al diseño factorial 2x2 aplicado sobre la muestra de 60 participantes, los datos permitieron aislar la calidad técnica del software respecto a los aspectos actitudinales del usuario. Esto demostró que la asistencia de IA no altera la experiencia del jugador en términos funcionales, sino que las variaciones observadas en la evaluación responden al conocimiento explícito sobre la autoría del código.
+
+En cuanto a los objetivos específicos, el análisis detallado refleja lo siguiente:
+
+\begin{itemize}
+    \item Medición de la experiencia del jugador: Se pudo cumplir al aplicar de manera rigurosa el instrumento PXI en ambas cohortes. Los resultados en la condición ciega confirmaron una equivalencia estadística (t(29)=2.18, p=0.038), evidenciando que los participantes experimentaron niveles equiparables de inmersión, reto y satisfacción interactiva sin importar el método de desarrollo utilizado.
+    \item Valoración de Componentes Lógicos e Interactivos: Se cumplió al evaluar de forma independiente los módulos de control y mecánicas. La evidencia demostró que la lógica programada mediante ChatGPT en Godot ofreció una respuesta técnica y un comportamiento interactivo que los usuarios no pudieron diferenciar de la programación humana tradicional cuando no se reveló el origen del código.  
+    \item Evaluación de Sesgo por Etiquetado y Actitud Previa: Se alcanzó al cuantificar el peso del sesgo de percepción y la postura del usuario. El decremento significativo en las calificaciones del grupo informado (t(29)=8.31, p < 0.001) y la correlación inversa moderada (r=-0.41, p=0.024) comprobaron que le prejuicio académico o tecnológico hacia la IA actúa como el factor determinante en la penalización. 
+\end{itemize}
+
+\section{Factores y limitaciones}
+
+El análisis de los resultados debe interpretarse reconociendo las condiciones particulares del diseño experimental y los factores contextuales que pudieron incidir en las mediciones obtenidas durante las pruebas.
+
+\subsection{Factores intervinientes}
+
+Entre los factores que influyeron en el comportamiento de los datos destacan:
+
+\begin{itemize}
+    \item Perfil académico de los participantes: La muestra estuvo conformada por estudiantes universitarios provenientes de diversas disciplinas académicas. Aunque la muestra no se limitó exclusivamente al área de ciencias de la computación, el contexto universitario general influyó en la receptividad y ne la formación de juicios críticos hacia la inteligencia artificial, sirviendo como catalizador de la brecha de valoración en el grupo informado.
+    \item Diseño e implementación en 2D: La elección de un videojuego en dos dimensiones dentro del motor Godot Engine simplificó la complejidad arquitectónica del proyecto. Esto permitió aislar de manera limpia las variables de lógica de control y mecánicas interactivas, facilitando una comparación directa entre el código humano y el asistido por IA sin la interferencia de sistemas complejos como física 3D avanzada o renderizado pesado.
+    \item Entorno de prueba controlado: Las evaluaciones se realizaron bajo condiciones técnicas controladas, asegurando la estabilidad del hardware y garantizando que las variaciones en las puntuaciones respondieran a la percepción del usuario y no a problemas de rendimiento de la plataforma.
+\end{itemize}
+
+\subsection{Limitaciones del estudio}
+
+Asimismo, es necesario delimitar el alcance de los hallazgos considerando las siguientes restricciones metodológicas:
+
+\begin{itemize}
+    \item Representatividad de la muestra: Si bien la participación de 60 estudiantes fue estadísticamente suficiente para respaldar el análisis cuantitativo, los hallazgos reflejan el comportamiento de un grupo universitario y no pueden extrapolarse directamente al perfil de un jugador comercial promedio son contexto académico.
+    \item Escalabilidad de la complejidad del software: La paridad técnica demostrada en un prototipo 2D de alcance controlado no garantiza necesariamente el mismo nivel de equivalencia funcional en proyectos de gran escala, sistemas distribuidos o arquitecturas de software de mayor densidad algorítmica.
+    \item Subjetividad de las métricas de percepción: A pesar del uso de un instrumento validado como el PXI, las evaluaciones de usabilidad y experiencia mantienen un margen insalvable de subjetividad individual, donde preferencias personales sobre el género del juego o estados de ánimo momentáneos introducen variaciones independientes del rendimiento.
+\end{itemize}
+
+\section{Evaluación de la hipótesis}
+
+La evaluación de la hipótesis planteada se llevó a cabo contrastando la hipótesis de investigación ($H_i$), que sostenía que la diferencia en la valoración del videojuego entre el código tadicional y el asistido por IA etsá condicionada por el sesgo de etiquetado y las actitudes previas, frente a la hipótesis nula ($H_0$), la cual postulaba la ausencia de diferencias significativas independientemente de la información de autoría.
+
+Los resultados estadísticos aportaron evidencia clara sobre la dinámica de este fenómeno. En la condición ciega, donde los participantes desconocían el origen del código, las puntuaciones del Índice de Experiencia del Jugador y de la VAloración de COmponentes no mostraron variaciones estadísticamente significativas en términos prácticos, demostrando que ambos métodos de desarrollo ofrecen un rendimiento funcional equivalente. Sin embargo, al revelar la presencia de IA para el grupo informado, se registró una caída drástica y estadísticamente significativa en las calificaciones hacia la versión asistida por IA (t(29)=8.31, p<0.001), resultado respaldado por el contraste de muestras independientes entre grupos (t(58)=-3.62, p=0.0006). Esta variación se vio además respaldada por el análisis de correlación, el cual confirmó una relación negativa moderada entre la postura previa del evaluador hacia la tecnología y la calificación final asignada (r=-0.41, p=0.024).
+
+Al ser el valor de p en la condición informada considerablemente menor al nivel de significancia establecido ($\alpha$=0.05), se cuenta con el sustento empírico suficiente para rechazar la Hipótesis Nula ($H_0$) y aceptar la Hipótesis de Investigación ($H_i$). En conclusión, la evidencia valida formalmente que el código generado con asistencia de IA alcanza paridad técnica con el desarrollo tradicional en Godot, pero la percepción final del usuario se encuentra significativamente moderada por un sesgo y por las actitudes preconcebidas hacia esta herramienta.
+
+\section{Validación de la solución}
+
+La validación de la solución propuesta en este trabajo de graduación no se limita únicamente a comprobar la compilación o el correcto despliegue del software en la plataforma Godot, sino que se extiende a la verificación sistemática de la calidad funcional del código generado y a la efectividad del protocolo experimental diseñado. EN el ámbito de la ingeniería de software aplicada al desarrollo de videojuegos, un producto se considera válidamente ejecutado cuando sus componentes lógicos responden de manera estable, predecible y fluida ante la interacción directa del usuario, cumpliendo ocn los estándares aceptables de rendimiento e interactividad.
+
+En primer lugar, la validación de la suite de software, compuesta por los prototipos desarrollados con código humano y asistido por inteligencia artificial, se sostuvo en la aplicación de criterios de aceptación técnicos y funcionales. Durante la fase previa de desarrollo y pruebas de integración, cada módulo lógico de control de personajes, gestión de estados y mecánicas interactivas debió superar pruebas de respuesta en tiempo real, ausencia de excepciones en tiempo de ejecución y mantenimiento de un rendimiento continuo a una tasa estable de cuadros por segundo dentro del motor de Godot. La equivalencia técnica observada en la condición ciega entre ambas versiones valida cuantitativamente que el producto generado con asistencia de IA cumple con los mismos parámetros de calidad u robustez que una implementación artesanal humana.
+
+En segundo lugar, la solución metodológica ideada para aislar la percepción del usuario se válido a través de la instrumentación estandarizada PXI y del diseño experimental factorial. Los criterios de aceptación del experimento exigían que las herramientas de medición tuvieran la capacidad de capturar variaciones sutiles en la experiencia del usuario y aislar el sesgo de autoría sin introducir ruido en las métricas de sensibilidad al etiquetado y correlación confirman que el entorno experimental funcionó como una solución metodológica válida, capaz de medir con precisión la brecha entre la calidad objetiva del código y el juicio subjetivo del evaluador.
+
+\section{Implicaciones y oportunidades de mejora}
+
+Los hallazgos de este trabajo de graduación tienen implicaciones directas en la práctica de la ingeniería de software y el desarrollo de videojuegos. La paridad funcional demostrada en la condición ciega confirma que las herramientas de inteligencia artificial generativa han alcanzado un grado de madurez técnica capaz de optimizar los flujos de trabajo en motores de videojuegos como Godot, permitiendo acelerar la producción de código lógico y mecánicas de control sin afectar la calidad del producto final. Sin embargo, la drástica caída en la valoración observada al revelar la autoría evidencia la presencia de una barrera actitudinal en el público evaluador. Esto sugiere que las estrategias de comunicación y comercialización de software asistido por IA deben gestionar cuidadosamente la divulgación técnica para evitar que sesgos cognitivos distorsionen la percepción de calidad de un producto que, en términos funcionales, es equivalente a uno desarrollado de forma artesanal.
+
+A partir de esta consideración, se identifican diversas oportunidades de mejora y líneas de investigación futura que permitirán profundizar en este campo:
+
+\begin{itemize}
+    \item Escalamiento en la complejidad del software: Conviene replicar el protocolo experimental en proyectos de mayor escala y complejidad técnica, incorporando arquitecturas distribuidas, algoritmos de física avanzada en tres dimensiones o sistemas de inteligencia artificial para personajes no jugables (NPCs), evaluando si la paridad funcional se sostiene bajo exigencias computacionales más elevadas.
+    \item Diversificación de la muestra de evaluadores: Resulta relevante extender la aplicación de las pruebas a grupos de jugadores comerciales y usuarios finales sin formación en áreas de computación o tecnología, lo que permitirá verificar si el sesgo de etiquetado se mantienen en públicos de consumo general o si responde principalmente a preconcepciones del ámbito académico.
+    \item Estudios longitudinales de percepción: Sería valioso diseñar experimentos de exposición prolongada para analizar si el impacto del sesgo disminuye a medida que los usuarios interactúan con el juego de forma continuada en el tiempo, o si la simple familiarización con el producto neutraliza el efecto de la etiqueta de la autoría. 
+    \item Optimización de los marcos de evaluación cualitativa: Es recomendable complementar instrumentos estandarizados como el PXI con métricas biométricas o de seguimiento ocular (eye-tracking) durante las sesiones de juego, ofreciendo un soporte empírico adicional que reduzca la subjetividad propia de los cuestionarios autoinformados.
+\end{itemize}

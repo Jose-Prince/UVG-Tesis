@@ -427,7 +427,7 @@
 	\fi
 \fi
 
-% Resultados
+% RESULTADOS
 % ------------------------------------------------------------------------------
 \ifdefined\CAPresultados
 	\newpage
@@ -438,6 +438,19 @@
 		\input{q-resultados}
 	\fi
 \fi
+
+% DISCUSIÓN DE RESULTADOS
+% ------------------------------------------------------------------------------
+\ifdefined\CAPdiscusion
+	\newpage
+	\chapter{Discusión de Resultados}
+	\ifdefined\parpordefecto
+		\defaultparformat{s-discusion}
+	\else
+		\input{s-discusion}
+	\fi
+\fi
+
 % CONCLUSIONES
 % ------------------------------------------------------------------------------
 \ifdefined\CAPconclusiones
