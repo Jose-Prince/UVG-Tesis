@@ -1,8 +1,8 @@
 \section{Enfoque metodológico}
 
-El presente trabajo profesional de graduación corresponde a un proyecto de investigación aplicada de carácter experimental, ya que combina el desarrollo de un instrumento funcional (videojuego) con la medición y análisis de variables controladas sobre una muestra de estudiantes evaluando el impacto de la Ia generativa.
+El presente trabajo profesional de graduación corresponde a un proyecto de investigación aplicada de carácter experimental, ya que combina el desarrollo de un instrumento funcional (videojuego) con la medición y análisis de variables controladas sobre una muestra de estudiantes evaluando el impacto de la IA generativa.
 
-El enfoque experimental se justifica por la naturaleza del estudio, que presenta a un grupo de personas que evalúan dos versiones del videojuego sin informarles que una está realizada con IA generativa. Este diseño permite aislar la reacción real de los participantes ante la calidad del contenido, eliminando un posible efecto del etiquetado y garantizando que la retroalimentación y comentarios reflejan una percepción genuina del contenido de ambas versiones. Los datos fueron recolectados mediante pruebas A/B y escalas Likert; las repuestas de los participantes fueron analizadas estadísticamente para identificar las diferencias significativas entre las dos versiones.
+El enfoque experimental se justifica por la naturaleza del estudio, que presenta a un grupo de personas que evalúan dos versiones del videojuego sin informarles inicialmente que una está realizada con IA generativa. Este diseño permite aislar la reacción real de los participantes ante la calidad del contenido, eliminando un posible efecto del etiquetado y garantizando que la retroalimentación y comentarios reflejan una percepción genuina del contenido de ambas versiones. Los datos fueron recolectados mediante pruebas A/B y escalas Likert; las respuestas de los participantes fueron analizadas estadísticamente para identificar las diferencias significativas entre las dos versiones.
 
 Por otro lado, el enfoque de investigación aplicada se justifica porque el objetivo del proyecto no es generar hallazgos de carácter puramente teórico, sino que busca proporcionar información valiosa para la industria de videojuegos para tomar decisiones informadas sobre la incorporación de la IA generativa en sus procesos de producción.
 
@@ -27,30 +27,31 @@ Para la ejecución del proyecto, el proceso se ha estructurado en cuatro fases. 
 
 \section{Recursos}
 \begin{enumerate}[label=\alph*]
-    \item Recursos humanos\newline
+    \item \textbf{Recursos humanos}\newline
     El proyecto involucra dos categorías de agentes con roles diferentes: desarrolladores y participantes.
     
     El equipo de desarrollo está conformado por dos estudiantes universitarios de la Universidad del Valle de Guatemala, cada uno con un enfoque específico. Un integrante fue el encargado del desarrollo visual, incluyendo la generación de assets con inteligencia artificial, su implementación en el motor de juego y la evaluación de su calidad mediante métricas computacionales. El segundo integrante fue el encargado del desarrollo de la lógica y código del videojuego, incorporando en una de las versiones técnicas de \textit{vibecoding} utilizando ChatGPT.
 
-    Para determinar con rigor estadístico el tamaño de la muestra, se utilizó un análisis de potencia, herramienta fundamental en el diseño experimental para garantizar la validez de un estudio \cite{abbadia2025analisis}. Este análisis articula cuatro componentes interconectados: la potencia estadística, el tamaño del efecto, el nivel de significancia ($\alpha$) y el tamaño de la muestra (n). En primer lugar, la potencia estadística mide la probabilidad de rechazar correctamente la hipótesis nula cuando ésta es falsa, fijándose en el umbral estándar del 80\% (1 - $\beta$ = 0.80). En segundo lugar, el tamaño del efecto cuantifica la magnitud del fenómeno estudiado mediante la d de Cohen (idónea para comparar las medias de dos grupos); para esta investigación se estimó un efecto grande de 0.75, fundamentado en que el fuerte estigma hacia la IA generativa provocaría un cambio drástico y altamente perceptible en las puntuaciones. En tercer lugar, el nivel de significancia ($\alpha$) representa la probabilidad de cometer un error de Tipo I (falso positivo), el cual se estableció en el 5\% ($\alpha$ = 0.05). Finalmente, al introducir matemáticamente estos parámetros, el análisis determinó un requerimiento mínimo de 30 participantes por grupo, consolidando una muestra total de 60 sujetos para el experimento.
+    Para determinar con rigor estadístico el tamaño de la muestra, se utilizó un análisis de potencia, herramienta fundamental en el diseño experimental para garantizar la validez de un estudio \cite{abbadia2025analisis}. Este análisis articula cuatro componentes interconectados: la potencia estadística, el tamaño del efecto, el nivel de significancia ($\alpha$) y el tamaño de la muestra ($n$). En primer lugar, la potencia estadística mide la probabilidad de rechazar correctamente la hipótesis nula cuando ésta es falsa, fijándose en el umbral estándar del $80\%$ ($1 - \beta = 0.80$). En segundo lugar, el tamaño del efecto cuantifica la magnitud del fenómeno estudiado mediante la $d$ de Cohen; para esta investigación se estimó un efecto grande de $0.75$, fundamentado en que el fuerte estigma hacia la IA generativa provocaría un cambio drástico y altamente perceptible en las puntuaciones. En tercer lugar, el nivel de significancia ($\alpha$) representa la probabilidad de cometer un error de Tipo I, el cual se estableció en el $5\%$ ($\alpha = 0.05$). Finalmente, al introducir matemáticamente estos parámetros, el análisis determinó un requerimiento mínimo de 30 participantes por grupo, consolidando una muestra total de 60 sujetos para el experimento.
 
-    La población del estudio fue constituida por estudiantes de la Universidad del Valle de Guatemala (UVG). Tras interactuar con ambas versiones del videojuego en la prueba A/B, los participantes completaron un cuestionario psicométrico basado en la escala Likert como instrumento de evaluación subjetiva. Los reactivos de la encuesta se diferenciaron según la condición experimental del sujeto: el grupo informado evaluó las mecánicas identificando explícitamente el origen de cada versión, mientras que el grupo no informado (ciego) responderá bajo un esquema de evaluación neutral, permitiendo aislar el sesgo ideológico de la calidad técnica percibida. 
-    \item Recursos tecnológicos\newline
+    La población del estudio fue constituida por estudiantes de la Universidad del Valle de Guatemala (UVG). Tras interactuar con ambas versiones del videojuego en la prueba A/B, los participantes completaron un cuestionario psicométrico basado en la escala Likert como instrumento de evaluación subjetiva. Los reactivos de la encuesta se diferenciaron según la condición experimental del sujeto: el grupo informado evaluó las mecánicas identificando explícitamente el origen de cada versión, mientras que el grupo no informado (ciego) respondió bajo un esquema de evaluación neutral, permitiendo aislar el sesgo ideológico de la calidad técnica percibida. 
+    \item \textbf{Recursos tecnológicos}\newline
     Para el desarrollo del videojuego se utilizó Godot Engine, un motor de código abierto y uso gratuito \cite{godot2026docs} que proveyó el entorno de desarrollo, renderizado y ejecución de ambas versiones del juego.
 
-    Para el desarrollo de código se utilizó ChatGPT, específicamente el modelo GPT-5.6 Luna, como herramienta de inteligencia artificial para la generación y asistencia en la escritura del código del videojuego. Para la recolección de datos subjetivos de los participantes se utilizó Google Forms, que permitió diseñar instrumentos con escalas Likert y exportar los resultados para su análisis estadístico. La organización, planificación y asignación de tareas del equipo se gestionó mediante Notion, una plataforma colaborativa en línea que centraliza el seguimiento del avance del proyecto. Todo el desarrollo se realizó en las computadoras personales de cada miembro del equipo.
-    \item Estrategias para garantizar disponibilidad \newline
-    Para garantizar la disponibilidad de los recursos tecnológicos, el código del proyecto fue gestionado mediante un repositorio de Github, asegurando todos los miembros del equipo tengan acceso ante cualquier pérdida de datos.
+    Para el desarrollo de código se utilizó ChatGPT como herramienta de inteligencia artificial para la generación y asistencia en la escritura del código del videojuego. Para la recolección de datos subjetivos de los participantes se utilizó Google Forms, que permitió diseñar instrumentos con escalas Likert y exportar los resultados para su análisis estadístico. La organización, planificación y asignación de tareas del equipo se gestionó mediante Notion, una plataforma colaborativa en línea que centraliza el seguimiento del avance del proyecto. Todo el desarrollo se realizó en las computadoras personales de cada miembro del equipo.
+    \item \textbf{Estrategias para garantizar disponibilidad} \newline
+    Para garantizar la disponibilidad de los recursos tecnológicos, el código del proyecto fue gestionado mediante un repositorio de GitHub, asegurando que todos los miembros del equipo tengan acceso ante cualquier pérdida de datos.
 
     Para garantizar la disponibilidad de los participantes, la convocatoria a las sesiones de evaluación se realizó con la anticipación suficiente y se proporcionó incentivos para garantizar la participación del mayor número posible de estudiantes.
 \end{enumerate}
+
 \section{Factibilidad}
 
-El proyecto fue técnicamente viable dentro del tiempo disponible, debido a que las tecnologías necesarias para su desarrollo fueron accesibles y ampliamente utilizadas. Godot Engine fue completamente gratuito y utilizado frecuentemente para realizar juegos \textit{indie}. Por su lado, la utilización de GPT-5.6 Luna permitió el acceso a una cantidad ilimitada de \textit{prompts}, lo que facilitó la integración continua de código al proyecto. Debido a que el juego no se construyó desde cero junto a ChatGPT, se estimó que con la capa gratuita de ChatGPT se podría completar el desarrollo de las mecánicas de esta versión del juego.
+El proyecto fue técnicamente viable dentro del tiempo disponible, debido a que las tecnologías necesarias para su desarrollo fueron accesibles y ampliamente utilizadas. Godot Engine fue completamente gratuito y utilizado frecuentemente para realizar juegos \textit{indie}. Por su lado, la utilización de ChatGPT permitió el acceso a una cantidad ilimitada de \textit{prompts}, lo que facilitó la integración continua de código al proyecto. Debido a que el juego no se construyó desde cero junto a ChatGPT, se estimó que con la capa gratuita se podría completar el desarrollo de las mecánicas de esta versión del juego.
 
 La demo del videojuego tuvo una escala alcanzable por un equipo de dos personas con los conocimientos técnicos propios de estudiantes de Ingeniería en Ciencias de la Computación. Además, el uso de Godot redujo la complejidad técnica al proveer sistemas de renderizado, física y gestión de \textit{assets}, lo que permitió que el equipo se enfocara en el contenido y no en la infraestructura del videojuego. Finalmente, no se necesitaron equipos complejos para realizar el proyecto, ya que la principal herramienta fueron las computadoras personales de cada integrante.
 
-A pesar de la viabilidad técnica del proyecto, se identificaron riesgos metodológicos. La Tabla~\ref{tab:riesgos-metodologicos} presenta cada riesgo junto con su nivel de impacto, probabilidad estimada y plan de mitigación correspondiente.
+A pesar de la viabilidad técnica del proyecto, se identificaron riesgos metodológicos. El Cuadro~\ref{tab:riesgos-metodologicos} presenta cada riesgo junto con su nivel de impacto, probabilidad estimada y plan de mitigación correspondiente.
 
 \begin{table}[H] 
     \centering 
@@ -101,46 +102,56 @@ A pesar de la viabilidad técnica del proyecto, se identificaron riesgos metodol
 
 Para evaluar de manera cuantitativa y cualitativa el cumplimiento de los objetivos del proyecto, se definieron indicadores agrupados bajo dos enfoques metodológicos: métricas de calidad y estabilidad técnica, orientadas a garantizar que el software actuara como un entorno de pruebas controlado y simétrico; y métricas de percepción subjetiva, diseñadas para evaluar la experiencia del usuario y la capacidad de detección del código generado algorítmicamente. 
 
-A continuación, se detallan las métricas establecidas, su relación directa con los objetivos específicos y sus respectivos mecanismos de recolección de datos. 
-\subsection{Métrica 1: Índice de experiencia del jugador} 
+A continuación, se detallan las métricas establecidas, su relación directa con los objetivos específicos, el tratamiento de datos y los respectivos mecanismos de recolección y análisis estadístico. 
 
-\subsubsection{Definición de la métrica} 
+\subsection{Métrica 1: Índice de Experiencia del Jugador} 
 
-Es la puntuación multidimensional que cuantifica la experiencia del estudiante al interactuar con el videojuego, evaluando dimensiones clave del marco Player Experience Inventory (PXI) tales como la inmersión, competencia, autonomía, claridad técnica y diversión. Evalúa las diferencias estadísticamente significativas en las dimensiones de la experiencia del jugador entre la versión desarrollada tradicionalmente y la versión asistida por inteligencia artificial generativa.
+\subsubsection{Definición y preguntas que forman el índice} 
+Es la puntuación multidimensional que cuantifica la experiencia del estudiante al interactuar con el videojuego, evaluando dimensiones clave del marco \textit{Player Experience Inventory} (PXI) tales como usabilidad, facilidad de control, claridad de objetivos, reglas, inmersión, autonomía y sentido de competencia. 
 
-\subsubsection{Forma de medición y recolección} 
+El instrumento aplicado consistió en un cuestionario estructurado de 26 reactivos en total distribuidos equitativamente para evaluar ambas variantes del juego. Específicamente, el índice para cada versión se construyó a partir de un bloque de 13 preguntas psicométricas basadas en escalas Likert de 5 puntos (donde 1 representa ``Totalmente en desacuerdo'' y 5 representa ``Totalmente de acuerdo''). Los reactivos que componen la evaluación de cada versión eran los siguientes:
+\begin{enumerate}
+    \item Era fácil saber cómo realizar acciones en el juego.
+    \item El juego era fácil de controlar.
+    \item Comprendí los objetivos del juego.
+    \item Comprendí las reglas y la forma de progresar en el juego.
+    \item El juego me permitía conocer mi progreso.
+    \item El juego proporcionaba información clara sobre mi progreso hacia lso objetivos.
+    \item El juego despertó mi curiosidad por descubrir que sucedería a continuación.
+    \item Me sentí competente al jugar el juego.
+    \item Me sentí inmerso en el juego mientras jugaba.
+    \item Sentí que tenía libertad para decidir cómo jugar.
+    \item La experiencia de jugar me resulto significativa.
+\end{enumerate}
 
-Se aplicará un cuestionario psicométrico estructurado mediante escalas Likert de 5 puntos (donde 1 representa "Totalmente en desacuerdo" y 5 representa "Totalmente de acuerdo") justo al concluir el playtesting de ambas versiones y para cada una de las poblaciones de estudio. Los datos obtenidos se procesarán mediante un análisis de varianza (ANOVA mixto 2x2) para determinar si existen diferencias estadísticamente significativas (p < 0.05) atribuibles al método de desarrollo. 
+\subsubsection{Forma de obtención del promedio y procesamiento estadístico} 
+Para cada participante, el promedio global del Índice de Experiencia del Jugador por versión se obtuvo calculando la media aritmética de los 13 reactivos correspondientes a dicha variante (los primeros 13 reactivos para la versión tradicional y los 13 siguientes para la versión asistida por IA). 
+
+Durante el procesamiento de los datos, se aplicó un control de calidad estricto: se verificó la ausencia de valores nulos o sesgos por abandono, garantizando que el conjunto de datos cumpliera con el rango Likert establecido (1 a 5). Los estadísticos resultantes se contrastaron mediante una prueba $t$ de Student de muestras emparejadas para evaluar las diferencias dentro de cada grupo experimental, fijando un nivel de significancia de $\alpha = 0.05$. Todo el procesamiento computacional, la limpieza de datos y la ejecución de los contrastes estadísticos se llevaron a cabo utilizando scripts automatizados en el lenguaje de programación Python apoyados en bibliotecas de cálculo científico (\texttt{NumPy} y \texttt{SciPy}).
 
 \subsection{Métrica 2: Índice de Valoración de Componentes Específicos}
 
-\subsubsection{Definición de la métrica} 
-
-Es un indicador que cuantifica el grado de aceptación y la calificación subjetiva asignada por los estudiantes universitarios a elementos particulares del videojuego (tales como las mecánicas de juego y el apartado técnico o de programación), permitiendo así identificar si existen desvíos en la calidad percibida de componentes específicos entre ambas versiones. Analiza la variación en la valoración de los componentes individuales (mecánicas de juego y apartado técnico/código) cuando los estudiantes desconocen la fuente de generación frente a cuando se les revela explícitamente el uso de IA generativa.
+\subsubsection{Definición de la métrica y preguntas asociadas} 
+Es un indicador que cuantifica el grado de aceptación y la calificación subjetiva asignada por los estudiantes universitarios a elementos particulares del videojuego, enfocándose específicamente en la lógica, las mecánicas de juego y el apartado de programación funcional. Analiza la variación en la valoración de estos componentes individuales cuando los estudiantes desconocen la fuente de generación frente a cuando se les revela explícitamente el uso de IA generativa.
 
 \subsubsection{Forma de medición y recolección} 
-
-Se utilizarán reactivos específicos estructurados con escalas Likert de 5 puntos dentro del cuestionario posterior a la prueba. Se evaluará la percepción tanto en el bloque a ciegas (para medir la reacción objetiva al contenido) como tras la revelación de la autoría (para medir el sesgo de etiquetado). Los resultados se analizarán mediante pruebas estadísticas comparativas para contrastar las variaciones en cada componente específico.
+Se utilizaron reactivos específicos dentro de los bloques del cuestionario posterior a la prueba. Se evaluó la percepción tanto en el bloque a ciegas (Grupo 1) como tras la revelación de la autoría (Grupo 2). Los puntajes se agregaron y promediaron por sujeto para obtener la valoración de los componentes lógicos e interactivos, cuantificando la diferencia absoluta entre versiones ($\text{Tradicional} - \text{IA}$).
 
 \subsection{Métrica 3: Coeficiente de Correlación de Conocimiento Previo} 
 
 \subsubsection{Definición de la métrica} 
-
-Es una medida estadística de asociación que cuantifica la relación entre el nivel de familiaridad, experiencia previa y actitud declarada de los estudiantes universitarios hacia la inteligencia artificial generativa, y los niveles de aceptación, rechazo o calificación final que otorgan a cada versión del videojuego. Mide el grado de correlación entre el conocimiento previo y las actitudes hacia la IA generativa de los estudiantes universitarios con sus niveles de aceptación, preferencia y percepción final del videojuego.
+Es una medida estadística de asociación que cuantifica la relación entre el nivel de familiaridad, experiencia previa y actitud declarada de los estudiantes universitarios hacia la inteligencia artificial generativa, y los niveles de aceptación, rechazo o calificación final que otorgan a cada versión del videojuego.
 
 \subsubsection{Forma de medición y recolección} 
+Se administró una pregunta diagnóstica inicial (reactivo de control sobre actitud y familiaridad previa) antes de la prueba. Posteriormente, mediante el script de Python, se cruzó estadísticamente esta variable con los puntajes de experiencia de juego y las brechas de valoración (caídas) mediante el cálculo del **Coeficiente de Correlación de Pearson ($r$)**, evaluando su significancia bajo el umbral estándar de $\alpha = 0.05$.
 
-Se administra un cuestionario diagnóstico inicial antes de la prueba para evaluar el perfil tecnológico y las percepciones previas del participante sobre el uso de la IA en el desarrollo de software. Posteriormente, se cruza estadísticamente esta información con las puntuaciones globales de experiencia de juego y aceptación obtenidas tras la evaluación. Se aplican pruebas de correlación estadística para determinar si un mayor conocimiento o preconcepto sobre la IA influye de manera directa en la evaluación del producto.
-
-\subsection{Métrica 4: Indice de Sensibilidad al Etiquetado}
+\subsection{Métrica 4: Índice de Sensibilidad al Etiquetado}
 
 \subsubsection{Definición de la métrica}
-
-En un indicador que cuantifica la magnitud del cambio en la valoración global y la intención de uso que emite un estudiante cuando evalúa el videojuego bajo un esquema a ciegas en comparación con cuando se le revela explícitamente el origen del desarrollo. Compara el impacto relativo que tienen la calidad del contenido entregado y el sesgo de etiquetado sobre la intención de uso y la valoración global del videojuego por parte de los usuarios.
+Es un indicador que cuantifica la magnitud de la brecha en la valoración global (calculada como la resta numérica directa entre la media de evaluación de la versión tradicional y la media de la versión asistida por IA: $\text{Valoración}_{\text{Tradicional}} - \text{Valoración}_{\text{IA}}$) para cada sujeto en su respectiva condición experimental.
 
 \subsubsection{Forma de medición y recolección}
-
-Se registran las puntuaciones de valoración global y de intención de uso otorgadas por los participantes para ambos grupos (ciego y totalmente informado). Se utiliza un análisis de varianza para medir estadísticamente si la revelación de la autoría genera una caída artificial en la nota o si la valoración se mantiene estable basándose en la calidad técnica experimentada.
+Se contrastó estadísticamente la magnitud de las caídas medias obtenidas en el Grupo 1 (condición ciega) frente al Grupo 2 (condición informada) mediante una **prueba $t$ de muestras independientes (con corrección de Welch)** para muestras con posibles diferencias de varianza, calculando los grados de libertad ajustados ($\text{df} \approx 57.32$) y obteniendo el valor de probabilidad bilateral ($p < 0.001$), lo que permitió confirmar formalmente el impacto del sesgo de etiquetado.
 
 \section{Trazabilidad metodológica}
 
