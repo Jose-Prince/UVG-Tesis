@@ -20,13 +20,13 @@ A partir de la tabulación de las respuestas individuales de la escala Likert (d
 \begin{enumerate}
     \item \textbf{Grupo 1 (Condición ciega):}
     \begin{itemize}
-        \item \textbf{Versión tradicional:} Puntuación promedio global de $3.99/5$ (derivada de la media de las dimensiones del PXI).
-        \item \textbf{Versión asistida por IA:} Puntuación promedio global de $3.65/5$ (derivada de la media de las dimensiones del PXI).
+        \item \textbf{Versión tradicional:} Puntuación promedio global de $4.02/5$ ($SD = 0.69$).
+        \item \textbf{Versión asistida por IA:} Puntuación promedio global de $3.66/5$ ($SD = 1.06$).
     \end{itemize}
     \item \textbf{Grupo 2 (Condición informada):}
     \begin{itemize}
-        \item \textbf{Versión tradicional:} Puntuación promedio global de $4.03/5$ (derivada de la media de las dimensiones del PXI).
-        \item \textbf{Versión asistida por IA:} Puntuación promedio global de $2.95/5$ (derivada de la media de las dimensiones del PXI).
+        \item \textbf{Versión tradicional:} Puntuación promedio global de $4.08/5$ ($SD = 0.65$).
+        \item \textbf{Versión asistida por IA:} Puntuación promedio global de $2.90/5$ ($SD = 0.92$).
     \end{itemize}
 \end{enumerate}
 
@@ -55,7 +55,7 @@ A partir de la tabulación de las respuestas individuales de la escala Likert (d
         Libertad de decisión (Autonomía) & 3.80 & 3.53 & 3.93 & 3.13 \\
         Significación de la experiencia & 3.87 & 3.53 & 4.00 & 2.63 \\ 
         \midrule
-        \textbf{Promedio Global IEJ} & \textbf{3.99} & \textbf{3.65} & \textbf{4.03} & \textbf{2.95} \\ 
+        \textbf{Promedio Global IEJ} & \textbf{4.02} & \textbf{3.66} & \textbf{4.08} & \textbf{2.90} \\ 
         \bottomrule
     \end{tabularx}
     \vspace{0.2cm}
@@ -85,22 +85,22 @@ Las mediciones medias obtenidas para los componentes funcionales e interactivos 
 
 \subsection{Resultados del Coeficiente de Correlación de Conocimiento Previo}
 
-Se cuantificó la relación estadística entre las variables de conocimiento previo y las puntuaciones obtenidas en el Índice de Experiencia del Jugador. Para ello, se empleó el coeficiente de correlación de Pearson ($r$), calculado mediante el script automatizado a partir de las matrices de datos de la encuesta:
+Se cuantificó la relación estadística entre las variables de actitud o familiaridad previa y las puntuaciones obtenidas en el Índice de Experiencia del Jugador. Para ello, se empleó el coeficiente de correlación de Pearson ($r$), calculado mediante el script automatizado a partir de las matrices de datos de la encuesta:
 
 \begin{equation*}
 r_{xy} = \frac{\sum_{i=1}^{n} (x_i - \bar{x})(y_i - \bar{y})}{\sqrt{\sum_{i=1}^{n} (x_i - \bar{x})^2} \sqrt{\sum_{i=1}^{n} (y_i - \bar{y})^2}}
 \end{equation*}
 
-Donde $n$ representa el tamaño de la muestra ($n = 30$ por grupo), $x_i$ corresponde a la puntuación de conocimiento previo o actitud declarada obtenida en el cuestionario diagnóstico inicial, $y_i$ al Índice de Experiencia del Jugador o brecha de valoración derivada de las pruebas, y $\bar{x}$, $\bar{y}$ a sus respectivas medias aritméticas.
+Donde $n$ representa el tamaño de la muestra ($n = 30$ por grupo), $x_i$ corresponde a la puntuación de actitud previa obtenida en el cuestionario inicial, $y_i$ al Índice de Experiencia del Jugador o brecha de valoración derivada de las pruebas, y $\bar{x}$, $\bar{y}$ a sus respectivas medias aritméticas.
 
 \begin{enumerate}
     \item \textbf{Condición ciega (Grupo 1):}
     \begin{itemize}
-        \item El coeficiente de correlación de Pearson entre la familiaridad previa declarada y el Índice de Experiencia del Jugador global de la versión con IA fue de $r = 0.12$ ($p = 0.53$), indicando ausencia de asociación lineal significativa cuando se desconoce la autoría.
+        \item El coeficiente de correlación de Pearson entre la actitud previa declarada y el IEJ global de la versión con IA registró un valor de $r = 0.35$ ($p = 0.0558$), indicando la ausencia de una asociación lineal estadísticamente significativa a un nivel $\alpha = 0.05$ cuando se desconoce la autoría del código.
     \end{itemize}
     \item \textbf{Condición informada (Grupo 2):}
     \begin{itemize}
-        \item El coeficiente de correlación de Pearson entre la actitud previa hacia la IA y la brecha de valoración entre ambas versiones registró un valor de $r = -0.41$ ($p = 0.024$), evidenciando una correlación inversa moderada.
+        \item El coeficiente de correlación de Pearson entre la actitud previa declarada y la brecha de valoración (caída) entre ambas versiones arrojó un valor de $r = 0.20$ ($p = 0.2991$), confirmando que la caída de puntuación observada en el grupo informado se manifestó de forma generalizada entre los participantes.
     \end{itemize}
 \end{enumerate}
 
@@ -111,13 +111,13 @@ Se cuantificó la magnitud de la brecha en la valoración global (calculada como
 \begin{enumerate}
     \item \textbf{Grupo 1 (Condición ciega):}
     \begin{itemize}
-        \item La caída media en la valoración entre la versión tradicional ($4.02$) y la versión con IA ($3.66$) fue de $0.36$ puntos ($4.02 - 3.66$).
-        \item Esta variación mínima refleja la estabilidad en la percepción objetiva de los usuarios cuando desconocen la procedencia del código.
+        \item La caída media en la valoración entre la versión tradicional ($4.023$) y la versión con IA ($3.664$) fue de $0.359$ puntos ($SD = 0.835$).
+        \item Esta variación contenida refleja la estabilidad en la percepción objetiva de los usuarios cuando desconocen la procedencia del código.
     \end{itemize}
     \item \textbf{Grupo 2 (Condición informada):}
     \begin{itemize}
-        \item La caída media en la valoración entre la versión tradicional ($4.08$) y la versión con IA ($2.90$) se amplió hasta $1.18$ puntos ($4.08 - 2.90$).
-        \item La prueba de muestras independientes confirmó que la diferencia en la magnitud de la caída entre ambos grupos es estadísticamente significativa, evidenciando cuantitativamente la presencia de un sesgo de etiquetado adverso hacia el desarrollo asistido por inteligencia artificial.
+        \item La caída media en la valoración entre la versión tradicional ($4.077$) y la versión con IA ($2.897$) se amplió sustancialmente hasta $1.1795$ puntos ($SD = 0.749$).
+        \item La diferencia entre las caídas medias entre ambos grupos fue de $-0.8205$ puntos. La prueba de muestras independientes confirmó que la diferencia en la magnitud de la caída entre ambos grupos es estadísticamente significativa, evidenciando cuantitativamente la presencia de un sesgo de etiquetado adverso hacia el desarrollo asistido por inteligencia artificial.
     \end{itemize}
 \end{enumerate}
 
@@ -128,11 +128,11 @@ Para verificar la significancia de las diferencias observadas entre las condicio
 \begin{enumerate}
     \item \textbf{Prueba $t$ de muestras emparejadas (comparación entre versiones por grupo):}
     \begin{itemize}
-        \item \textbf{Grupo 1 (Condición ciega):} Al comparar las puntuaciones globales emparejadas de cada sujeto entre la versión tradicional y la versión asistida por IA, el estadístico de prueba $t$ de Student computado registró un valor de $t(29) = 2.33$ con un nivel de significancia bilateral de $p = 0.0267$.
-        \item \textbf{Grupo 2 (Condición informada):} Al realizar la misma comparación emparejada bajo el conocimiento explícito de autoría, el estadístico de prueba computado registró un valor de $t(29) = 8.57$ con un nivel de significancia de $p = 1.9272 \times 10^{-9}$ ($p < 0.0001$).
+        \item \textbf{Grupo 1 (Condición ciega):} Al comparar las puntuaciones globales emparejadas de cada sujeto entre la versión tradicional y la versión asistida por IA, el estadístico de prueba $t$ de Student computado registró un valor de $t(29) = 2.3549$ con un nivel de significancia bilateral de $p = 0.0255$.
+        \item \textbf{Grupo 2 (Condición informada):} Al realizar la misma comparación emparejada bajo el conocimiento explícito de autoría, el estadístico de prueba computado registró un valor de $t(29) = 8.6297$ con un nivel de significancia de $p < 0.0001$ ($p = 0.000000$).
     \end{itemize}
-    \item \textbf{Prueba $t$ de muestras independientes (Comparación de caídas entre grupos):}
+    \item \textbf{Prueba $t$ de muestras independientes de Welch (Comparación de caídas entre grupos):}
     \begin{itemize}
-        \item Al contrastar mediante una prueba $t$ para muestras independientes la magnitud de la caída en la valoración entre el Grupo 1 y el Grupo 2, el script arrojó un estadístico de $t(58) = -3.97$ con un nivel de significancia de $p = 0.0002$.
+        \item Al contrastar mediante una prueba $t$ de Welch para muestras independientes la magnitud de la caída en la valoración entre el Grupo 1 y el Grupo 2, el script arrojó un estadístico de $t(57.32) = -4.0076$ con un nivel de significancia de $p = 0.000179$ ($p < 0.001$).
     \end{itemize}
 \end{enumerate}
